@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("./assets//Decore.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  color: #1b2f5a;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.scrollToTop {
+  display: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 4rem;
+  background-color: #f07167;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.scrollToTop i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  font-size: 1.9rem;
+  color: white;
+}
+
+.container {
+  margin: 0 10rem;
+}
+
+nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container {
+  display: flex;
+  justify-content: center;
+}
+nav .nav-container .brand {
+  color: #1b2f5a;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+nav .nav-container .responsive-toggle {
+  display: none;
+}
+nav .links ul {
+  list-style-type: none;
+  display: flex;
+}
+nav .links ul li {
+  margin: 0 1.5rem;
+}
+nav .links ul li a {
+  color: #1b2f5a;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.links ul li a :nth-child(5) {
+  color: #ccc;
+}
+
+.links ul li .sign_up {
+  border: 2px solid black;
+}
+
+button {
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  background-color: #ff9f1c;
+  font-size: 1.1rem;
+}
+
+.starter {
+  display: flex;
+}
+.starter .content {
+  margin: 4rem 0 0 0;
+}
+.starter .content .subTitle {
+  color: #f07167;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.starter .content .title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.starter .content .title span {
+  background-image: url("/assets/Decore Text.png");
+  background-size: 120%;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: bottom 5px left 0;
+}
+.starter .content .description {
+  font-style: 1.1rem;
+  letter-spacing: 0.015rem;
+  margin-bottom: 1rem;
+}
+.starter .content .last {
+  display: flex;
+  align-items: center;
+}
+.starter .content .last .play {
+  margin: 2rem 0 2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+.starter .content .last .play button {
+  border-radius: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: #f94144;
+  box-shadow: rgba(249, 65, 68, 0.2392156863) 0px 10px 20px, rgba(249, 65, 68, 0.2862745098) 0px 6px 6px;
+}
+.starter .content .last .play button i {
+  font-size: 0.8rem;
+}
+.starter .content .last .play span {
+  font-size: 1rem;
+}
+.starter .image img {
+  height: 33rem;
+}
+
+.services {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.services .subTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: gray;
+  font-size: 1.3rem;
+}
+.services .title {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.services .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.services .cards .card {
+  height: 12rem;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+}
+.services .cards .card icon {
+  margin-bottom: 1rem;
+}
+.services .cards .card .title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.services .cards .card p {
+  text-align: center;
+}
+
+.destination {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destination .subTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: gray;
+  font-size: 1.3rem;
+}
+.destination .title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.destination .cards {
+  display: flex;
+  gap: 6rem;
+}
+.destination .cards .image img {
+  height: 20rem;
+  width: 17rem;
+}
+.destination .cards .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.destination .cards h3 {
+  margin: 10px 10px 10px 10px;
+}
+.destination .cards .time {
+  display: flex;
+}
+.destination .cards .time i {
+  margin: 2px 10px 0 10px;
+}
+.destination .cards .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  padding-bottom: 14px;
+}
+
+.next-trip {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.next-trip .content .subTitle {
+  font-weight: bold;
+  color: gray;
+  margin-left: 5px;
+  font-size: 1.3rem;
+}
+.next-trip .content .title {
+  font-size: 4rem;
+  margin: 0.3rem 0 1rem 0;
+}
+.next-trip .content .steps .step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.next-trip .content .steps .step .text .title {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+.next-trip .content .steps .step .text p {
+  width: 70%;
+}
+.next-trip .content .steps .step .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next-trip .content .steps .step .icon img {
+  height: 3rem;
+}
+.next-trip .trip {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.next-trip .trip .title {
+  margin: 0.5rem;
+}
+.next-trip .trip .subTitle {
+  margin: 0 0.5rem;
+  color: rgb(78, 78, 78);
+}
+.next-trip .trip .icons {
+  margin: 1rem 0;
+  display: flex;
+}
+.next-trip .trip .icons .icon {
+  margin: 0 0 0 0.5rem;
+  background-color: rgb(224, 224, 224);
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+.next-trip .trip .like {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  color: rgb(78, 78, 78);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5rem 0;
+  gap: 20rem;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials .content .title {
+  font-size: 4rem;
+  margin: 0.3rem 0 1rem 0;
+}
+.testimonials .content .subTitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  margin-left: 5px;
+}
+.testimonials .review {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 9rem;
+  width: 20rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+.testimonials .review p {
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.testimonials .review h3 {
+  margin-bottom: 0.3rem;
+}
+.testimonials .review h4 {
+  font-weight: 100;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands img {
+  margin: 0 2rem;
+}
+
+.subsriberr {
+  position: relative;
+}
+.subsriberr img {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  height: 60px;
+  right: -12px;
+  top: -12px;
+}
+
+.subscribe {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(-225deg, rgba(182, 206, 232, 0.431372549) 0%, rgba(245, 120, 186, 0.24) 100%);
+  border-radius: 5rem 1rem 1rem 1rem;
+}
+.subscribe .title {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgb(82, 63, 117);
+}
+.subscribe input {
+  border: none;
+  width: 20rem;
+  border-radius: 0.3rem;
+  padding: 1.2rem 2rem;
+  margin-right: 1rem;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe button {
+  background-color: #f07167;
+  padding: 1.1rem 3rem;
+}
+
+footer {
+  margin: 5rem 0;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+footer .grid .brand .logo {
+  color: #1b2f5a;
+  font-size: 2.5rem;
+  font-weight: 450;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+footer .grid .brand .subTitle {
+  font-size: small;
+  font-weight: 500;
+  width: 90%;
+}
+footer .grid .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .grid .social .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+footer .grid .social .links .link {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 1rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .grid .social .links .link i {
+  font-size: 1.3rem;
+}
+footer .grid .social .app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .grid .social .app .title {
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+footer .grid .social .app .links {
+  display: flex;
+  gap: 1rem;
+}
+footer .grid .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer .grid ul {
+  list-style-type: none;
+}
+footer .grid ul li {
+  margin: 1rem 0;
+}
+footer span {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-container .responsive-toggle {
+    display: block;
+  }
+  nav .nav-toggle {
+    height: 4rem !important;
+  }
+  nav .nav-toggle ul {
+    margin-top: 1rem;
+    display: flex !important;
+  }
+  nav .links {
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    display: none;
+    flex-direction: column;
+  }
+  .starter {
+    flex-direction: column;
+  }
+  .starter .image img {
+    height: 15rem;
+    margin-top: 4rem;
+  }
+  .services .cards {
+    flex-direction: column;
+  }
+  .destination .cards {
+    flex-direction: column;
+  }
+  .next-trip {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .brands {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .brands img {
+    margin: 1.2rem 0;
+  }
+  .subscribe .title {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .subscribe .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  footer .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  footer span {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-container .responsive-toggle {
+    display: block;
+  }
+  nav .nav-toggle {
+    height: 8rem !important;
+  }
+  nav .nav-toggle ul {
+    display: flex !important;
+  }
+  nav .links {
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav .links ul li {
+    margin: 0.5rem 0;
+  }
+  .starter {
+    flex-direction: column;
+  }
+  .starter .image img {
+    height: 40rem;
+    margin-top: 4rem;
+  }
+  .services .cards {
+    flex-direction: column;
+  }
+  .destination .cards {
+    flex-direction: column;
+  }
+  .next-trip {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .testimonials {
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .brands {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .brands img {
+    margin: 1.2rem 0;
+  }
+  .subscribe .title {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .subscribe .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  footer {
+    font-size: 1.3rem;
+  }
+  footer .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  footer span {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    margin: 0 6rem;
+  }
+}/*# sourceMappingURL=style.css.map */
